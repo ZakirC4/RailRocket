@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailRocket | Ride the Rocket</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #ff0000;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            color: #555;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to bottom right, #ff0000, #ff9900);
+            color: #fff;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        header .cta {
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: #333;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header .cta:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        main div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 2rem 0;
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            background: #e3e3e3;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        main div img {
+            margin-left: 1rem;
+            max-width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        main div:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/" style="color: black; text-decoration: none; :visited { color: black; text-decoration: none; }">RailRocket</a></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/drinks">Drinks</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to RailRocket</h1>
+        <p>Ride the Rocket.</p>
+        <button class="cta" onclick="window.location.href = '/drinks'">Explore Drinks</button>
+    </header>
+
+    <main>
+        <div>
+            <p style="color: green; font-size: large;">Never get tired and Stay Energized!</p>
+            <img src="assets/energized.png" alt="lightning logo" width="200" height="200">
+        </div>
+        <div>
+            <p style="color: blue; font-size: large; padding-left: 0.5cm;">Boosts your sport game.</p>
+            <img src="assets/sports.jpg" alt="sports logo" width="200" height="200">
+        </div>
+        <div>
+            <p style="color: red; font-size: large;">Refresh your day with our special drinks.</p>
+            <img src="assets/refreshing.jpg" alt="refreshing drink logo" width="200" height="200">
+        </div>
+    </main>
+</body>
+</html>
